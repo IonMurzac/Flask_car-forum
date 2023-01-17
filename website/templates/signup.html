@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}
+Sign up
+{% endblock %}
+
+{% block content %}
+<form class="col s12" method="POST" enctype="multipart/form-data">
+    <h3 align="center">Sign up</h3>
+    <div class="form-group" style="width: 35%;">
+        <label for="email">Email Address</label>
+        <input type="text" id="email" name="email" class="form-control" placeholder="Enter Email">
+
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" class="form-control" placeholder="Enter Username">
+
+        <label for="password1">Password</label>
+        <input type="password" id="password1" name="password1" class="form-control" placeholder="Enter Password">
+       
+        
+        <input type="password" id="password2" name="password2" class="form-control" placeholder="Confirm Password">
+
+        <br/>
+        <label for="about">About User</label>
+        <input type="text" id="about" name="about" class="form-control" placeholder="Enter somthing about you">
+        
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" class="form-control" placeholder="From which city">
+
+        <label for="car">Car</label>
+        <input type="text" id="car" name="car" class="form-control" placeholder="What car do you have">
+
+        <label for="hobby">Hobby</label>
+        <input type="text" id="hobby" name="hobby" class="form-control" placeholder="What is your hobby">
+
+        <label  for="file">Profile Picture</label>
+        <input type="file" id="file" name="file1" class="form-control">
+        <br/>
+        <div align="center">
+            <button class="btn btn-primary" type="submit">Sign up</button>
+        </div>
+    </div>
+</form>
+{% endblock %}
